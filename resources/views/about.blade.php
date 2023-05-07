@@ -11,6 +11,12 @@
         #fh5co-started .btn {
             background: #d1c286 !important
         }
+        .about-content img{
+            height: 420px;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover
+        }
     </style>
 @endpush
 @section('content')
@@ -40,16 +46,21 @@
         <div class="container">
             <div class="about-content">
                 <div class="row animate-box">
-                    <div class="col-md-6">
-                        <div class="desc">
-                            <h3>Company History</h3>
-                            <p>Find true quality time for you at some of Palm Beach's finest Golf & Spa Resorts. A truly
-                                effortless escape boasting sumptuous vistas, exclusive amenities, and luxury at your
-                                fingertips. Play on historic golf courses, suit up with premium attire or practice on a
-                                driving range. Renew yourself at the spa with unique, one-of-a-kind treatments and lavish
-                                products. These unforgettable stays will have you dreaming of coming back, year after year.
-                            </p>
+                    <div class="row animate-box" style="margin-top:100px">
+                        <div class="col-md-6">
+                            <img class="img-responsive" src="/images/a14.jpg" alt="about">
                         </div>
+                        <div class="col-md-6"  style="padding-top:10px">
+                            <div class="desc">
+                                <h3>About Our Resort</h3>
+                                <p>"Royal Moon Resort" located off the hippy haven of famous "Vagator and Anjuna beach". A true reflection of modern influences, contemporary hospitality which offers luxurious opulence of tastefully appointed rooms and suites for your indulgence.
+
+                                    The property is home away from home for regular as well as occasional visitors, visiting Goa for relaxation business trips or even recreational activities. Our full-service hotel facility offers luxury amenities, an on-site restaurant and the highest level of personalized services, The unique peaceful location of ours provides opportunity to reach all the famous North Goa beaches like Vagator, Anjuna, Baga, Calangute, Sinquerim Morjim Mandrem and Arambol in minutes time, Excellent entertainment and shopping option of Saturday night market and Splash Down Water Park located within walking distance of the hotel. There are several popular nightlife options nearby including Club Cabana and Tito’s within the area. Architecturally elevated property comprises of 28 tastefully furbished rooms. All the rooms are air conditioned, equipped with large 42" & 32" LED satellite linked televisions, mini bar fridges,tea coffee makers, electronic safes, and duvets are part of every room.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="padding-top:100px">
                         <div class="desc">
                             <h3>Mission &amp; Vission</h3>
                             <p>Grow The Tourism Economy. Discover The Palm Beaches is only one of the non-profit tourism
@@ -63,8 +74,25 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img class="img-responsive" src="/images/roberto-nickson-EeeKjwm2vDo-unsplash.jpg" alt="about">
+                        <img class="img-responsive" src="/images/a13.jpg" alt="about">
                     </div>
+                </div>
+                <div class="row animate-box" style="margin-top:100px">
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="/images/a12.jpg" alt="about">
+                    </div>
+                    <div class="col-md-6"  style="padding-top:100px">
+                        <div class="desc">
+                            <h3>Company History</h3>
+                            <p>Find true quality time for you at some of Palm Beach's finest Golf & Spa Resorts. A truly
+                                effortless escape boasting sumptuous vistas, exclusive amenities, and luxury at your
+                                fingertips. Play on historic golf courses, suit up with premium attire or practice on a
+                                driving range. Renew yourself at the spa with unique, one-of-a-kind treatments and lavish
+                                products. These unforgettable stays will have you dreaming of coming back, year after year.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="row animate-box">

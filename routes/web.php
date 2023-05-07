@@ -23,7 +23,7 @@ Route::get('/about',[App\Http\Controllers\UserController::class, 'about_view']);
 Route::get('/services',[App\Http\Controllers\UserController::class, 'services_view']);
 Route::get('/contact',[App\Http\Controllers\UserController::class, 'contact_view']);
 Route::get('/faqs',[App\Http\Controllers\UserController::class, 'faqs_view']);
-Route::get('/shop',[App\Http\Controllers\UserController::class, 'shop_view']);
+Route::get('/apartments',[App\Http\Controllers\UserController::class, 'shop_view']);
 Route::post('/contact-message',[App\Http\Controllers\UserController::class, 'contact_message']);
 Route::post('/addToFav',[App\Http\Controllers\UserController::class, 'addToFav']);
 Route::post('/removeFromFav',[App\Http\Controllers\UserController::class, 'removeFromFav']);

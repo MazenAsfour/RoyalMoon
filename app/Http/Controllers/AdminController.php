@@ -103,7 +103,6 @@ class AdminController extends Controller
             return view("dashboard.dashboard-subscribe")->with("admin",true)->with("admin",$user)->with("subscribes",$subscribes);;
         }else{
            abort("404");
-
         }
     }
     public function rating(){

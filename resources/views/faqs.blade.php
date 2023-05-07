@@ -22,7 +22,10 @@
                         <div class="display-tc animate-box " style="text-align: left;padding-left: 20px;"
                             data-animate-effect="fadeIn">
                             <h1>Faqs</h1>
-                            <h2>This is one of the most important thing that all employees must adhere to and practice when they become a part of Team Sunshine. We are proud that Customer Satisfaction has become our Key Success Factor for the past 43 years and counting, with the smile and heart of Team royal moon.
+                            <h2>This is one of the most important thing that all employees must adhere to and practice when
+                                they become a part of Team Sunshine. We are proud that Customer Satisfaction has become our
+                                Key Success Factor for the past 43 years and counting, with the smile and heart of Team
+                                royal moon.
                             </h2>
                         </div>
                     </div>
@@ -163,7 +166,9 @@
                         How many people can lodge within the same room? <i class="icon icon-chevron-down"></i>
                     </div>
                     <div class="answer">
-                        <p>The maximum number of people allowed within the same room is 3 persons (adult). The third person would be subjected to additional fee of approximately 1,000+++ baht per night including breakfast. However, family type rooms allow up to 4 persons.
+                        <p>The maximum number of people allowed within the same room is 3 persons (adult). The third person
+                            would be subjected to additional fee of approximately 1,000+++ baht per night including
+                            breakfast. However, family type rooms allow up to 4 persons.
 
 
                         </p>
@@ -178,7 +183,7 @@
             <div class="row animate-box">
                 <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
                     <h2>Newsletter</h2>
-                    <p>Just stay tune for our latest Product. Now you can subscribe</p>
+                    <p>Just stay tune for our latest Apartments. Now you can subscribe</p>
                 </div>
             </div>
             <div class="row animate-box">

@@ -308,8 +308,8 @@
                         <div id="choosedAppointents">
                             <div>Name : <span class="name"></span></div>
                             <div>Email : <span class="email"></span></div>
-                            <div>Capming Name : <span class="product"></span></div>
-                            <div> Price : <span class="price"></span></div>
+                            <div>Apartment Name : <span class="product"></span></div>
+                            <div>Price : <span class="price"></span></div>
                             <div>Date : <span class="date"></span></div>
                         </div>
                         <div>

@@ -10,6 +10,8 @@ Verify Account
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-image: url("/images/christian-lambert-lOXhHLWP1NE-unsplash.jpg");
+
         }
 
         nav,
@@ -38,7 +40,7 @@ Verify Account
                             action="{{ route('verification.resend') }}">
                             @csrf
                             <button type="submit"
-                                class="btn btn-link p-0 m-0 align-baseline">{{ __('click here to request another') }}</button>
+                                class="btn btn-link p-0 m-0 align-baseline">{{ __('Click here to request another') }}</button>
                         </form>
                         <a href="/logout" style="margin-left: 10px">Logout</a>
                     </div>

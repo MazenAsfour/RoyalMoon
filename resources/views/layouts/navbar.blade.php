@@ -9,7 +9,23 @@
     margin-top: -4px;
 }
 .active-nav a{
-    color: rgb(49 48 48 / 60%)  !important
+    color:wheat  !important
+}
+.active-nav{
+    border: 1px solid wheat !important;
+    padding: 4px 7px !important;;
+    border-radius: 3px;
+}
+
+.showVisibility{
+    visibility:visible !important;
+    opacity: 1 !important;
+}
+.color-wheat{
+    color: #fbebc5 !important
+}
+.dropdwon-login{
+    cursor: pointer;
 }
 </style>
 <div class="fh5co-loader"></div>
@@ -27,7 +43,7 @@
                             <a href="/" title="Home">Home</a>
                         </li>
                         <li>
-                            <a href="/shop" title="Apartments">Apartments</a>
+                            <a href="/apartments" title="Apartments">Apartments</a>
                         </li>
                         <li><a href="/about" title="About">About</a></li>
                         <li>
@@ -53,8 +69,8 @@
                         @isset($user[0]->image)
                             @php $image =$user[0]->image  @endphp
                         @endisset
-                            <li class="has-dropdown dropdwon-login">
-                                <a href="#" style="padding:0 !important"><img src="{{$image}}"
+                            <li class="has-dropdown dropdwon-login ">
+                                <a href="#" class="hover--" style="padding:0 !important"><img src="{{$image}}"
                                         class="img-profile-sm">
                                     <span> {{ Auth::user()->name }} </span> <i class="icon-chevron-down icon-login-cstm">
                                     </i></a>
@@ -97,6 +113,19 @@
             },
             function() {
                 $(".dropdwon-login .dropdwon").hide();
+
+            }
+        );
+        $(".dropdwon-login").hover(
+            function() {
+                $(".user").addClass("showVisibility");
+                $(".hover--").addClass("color-wheat");
+
+            },
+            function() {
+                $(".user").removeClass("showVisibility");
+                $(".hover--").removeClass("color-wheat");
+
             }
         );
         $(".menu-1 li a").each(function(){

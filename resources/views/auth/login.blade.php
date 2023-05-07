@@ -1,6 +1,6 @@
 @extends('layouts.app')
-@section("title")
-Login
+@section('title')
+    Login
 @endsection
 @push('custom-style')
     <style>
@@ -17,12 +17,16 @@ Login
             background-repeat: no-repeat;
             background-size: cover;
         }
-        nav,footer{
+
+        nav,
+        footer {
             display: none !important
         }
-        .invalid-feedback{
+
+        .invalid-feedback {
             text-align: left
         }
+
         .logo {
             width: 41px;
             margin-left: 10px;
@@ -78,7 +82,8 @@ Login
             <div class="box container" style="position: unset">
 
                 <h4 class="header">{{ __('Login') }}</h4>
-                <p style="padding-top: 10px;line-height:inherit">Don't have account? <a href="/register">Create an account</a></p>
+                <p style="padding-top: 10px;line-height:inherit">Don't have account? <a href="/register">Create an account</a>
+                </p>
                 </p>
 
                 <form method="POST" action="{{ route('login') }}">
@@ -171,6 +176,12 @@ Login
                             <p class="google-button-text">Sign in with Google</p>
                         </a>
                     </div>
+                    @isset($filed)
+                        <div class="alert alert-danger" role="alert">
+                            {{ $filed }}
+                        </div>
+                    @endisset
+
                 </form>
 
             </div>

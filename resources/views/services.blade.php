@@ -28,7 +28,10 @@
                         <div class="display-tc animate-box " style="text-align: left;padding-left: 20px;"
                             data-animate-effect="fadeIn">
                             <h1>Services</h1>
-                            <h2>This is one of the most important thing that all employees must adhere to and practice when they become a part of Team Sunshine. We are proud that Customer Satisfaction has become our Key Success Factor for the past 43 years and counting, with the smile and heart of Team royal moon.
+                            <h2>This is one of the most important thing that all employees must adhere to and practice when
+                                they become a part of Team Sunshine. We are proud that Customer Satisfaction has become our
+                                Key Success Factor for the past 43 years and counting, with the smile and heart of Team
+                                royal moon.
                             </h2>
                         </div>
                     </div>
@@ -67,7 +70,7 @@
                             <i class="icon-paper-plane"></i>
                         </span>
                         <h3>Personalized Greetings</h3>
-                        <p>Everyone loves personalization, be it when online shopping or when checking in on a hotel. 
+                        <p>Everyone loves personalization, be it when online shopping or when checking in on a hotel.
 
                             Can you imagine the surprise of your guest. </p>
                         <p><a href="/about" class="btn btn-primary btn-outline">Learn More</a></p>
@@ -90,7 +93,8 @@
                             <i class="icon-move"></i>
                         </span>
                         <h3>A Working Space</h3>
-                        <p>A lot of people work as freelancers, and many are working virtually. Working from home and its benefits are trending right now, and some people may need to check on their email.
+                        <p>A lot of people work as freelancers, and many are working virtually. Working from home and its
+                            benefits are trending right now, and some people may need to check on their email.
                         <p><a href="/about" class="btn btn-primary btn-outline">Learn More</a></p>
                     </div>
                 </div>
@@ -116,7 +120,7 @@
             <div class="row animate-box">
                 <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
                     <h2>Newsletter</h2>
-                    <p>Just stay tune for our latest Product. Now you can subscribe</p>
+                    <p>Just stay tune for our latest Apartments. Now you can subscribe</p>
                 </div>
             </div>
             <div class="row animate-box">
@@ -135,8 +139,7 @@
                             </div>
                         </div>
                         <div class="alert alert-success alert-success-sub ds-none"
-                            style="padding:8px 12px;font-size:14px;width: 50%; margin: auto;"
-                            role="alert">
+                            style="padding:8px 12px;font-size:14px;width: 50%; margin: auto;" role="alert">
                             Subscribed Successfully!
                         </div>
                     </form>

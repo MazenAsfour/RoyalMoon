@@ -33,8 +33,10 @@ $countUnreadApp = App\Models\Appointments::where("is_read","0")->count();
                             <div class="user_img"><img class="img-responsive" src="{{ $admin[0]->image }}"
                                     alt="#" /></div>
                             <div class="user_info">
-                                <h6>{{ $admin[0]->name }}</h6>
-                                <p><span class="online_animation"></span> Online</p>
+                                <a href="/dashboard-admin-profile">
+                                    <h6>{{ $admin[0]->name }}</h6>
+                                    <p><span class="online_animation"></span> Online</p>
+                                </a>
                             </div>
                         </div>
                     </div>

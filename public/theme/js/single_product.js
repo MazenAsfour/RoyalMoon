@@ -347,10 +347,10 @@ jQuery(document).ready(function() {
                         currency: 'USD',
                     });
                     $("#nm-days").text(days)
-                    $("#prc-days").text(USDollar.format(price * days));
-                    $("#prc-total b").text(USDollar.format(price * days));
-                    $("#apr-total b").text(USDollar.format(price * days));
-                    $("#price-form").val(USDollar.format(price * days));
+                    $("#prc-days").text(USDollar.format((price * days)+30));
+                    $("#prc-total b").text(USDollar.format((price * days)+30));
+                    $("#apr-total b").text(USDollar.format((price * days)+30));
+                    $("#price-form").val(USDollar.format((price * days)+30));
                 }
             },
         });

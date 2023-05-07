@@ -4,7 +4,7 @@
 @endsection
 @push('custom-style')
     <style>
-    
+
     </style>
 @endpush
 @section('content')
@@ -18,7 +18,10 @@
                         <div class="display-tc animate-box " style="text-align: left;padding-left: 20px;"
                             data-animate-effect="fadeIn">
                             <h1>{{ $product[0]->product_name }}</h1>
-                            <h2>This is one of the most important thing that all employees must adhere to and practice when they become a part of Team Sunshine. We are proud that Customer Satisfaction has become our Key Success Factor for the past 43 years and counting, with the smile and heart of Team royal moon.
+                            <h2>This is one of the most important thing that all employees must adhere to and practice when
+                                they become a part of Team Sunshine. We are proud that Customer Satisfaction has become our
+                                Key Success Factor for the past 43 years and counting, with the smile and heart of Team
+                                royal moon.
                             </h2>
                         </div>
                     </div>
@@ -116,7 +119,7 @@
                                 <h4>Cleaning Fees</h4>
                             </div>
                             <div class="col-sm-2">
-                                <h4 id="prc-fees">$0.000</h4>
+                                <h4 id="prc-fees">$30.00</h4>
                             </div>
                             <div class="col-sm-10">
                                 <h4>Tax</h4>
@@ -198,19 +201,16 @@
                 </div>
             </div>
 
-            <div class="container" style="margin-top: 90px">
+            <div class="container" style="margin-top: 90px;padding:0">
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="/images/74123025-140c-4926-b2f6-818b06742730.jpg" class="footer-top"
-                            alt="">
+                        <img src="/images/74123025-140c-4926-b2f6-818b06742730.jpg" class="footer-top" alt="">
                     </div>
                     <div class="col-md-3">
-                        <img src="/images/b92df366-3905-4c97-a19b-38b91f52a41c.jpg" class="footer-top"
-                            alt="">
+                        <img src="/images/b92df366-3905-4c97-a19b-38b91f52a41c.jpg" class="footer-top" alt="">
                     </div>
                     <div class="col-md-3">
-                        <img src="/images/4a2fa582-7b78-4518-8b80-af059d2de225.jpg" class="footer-top"
-                            alt="">
+                        <img src="/images/4a2fa582-7b78-4518-8b80-af059d2de225.jpg" class="footer-top" alt="">
                     </div>
                     <div class="col-md-3">
                         <img src="/images/12the-eddy-at-riverview-smyrna-ga-primary-photo.jpg" class="footer-top"
@@ -218,13 +218,13 @@
                     </div>
                 </div>
             </div>
-            
+
 
         </div>
 
     </div>
 
-   
+
     </div>
 
     <div id="fh5co-started">
@@ -232,7 +232,7 @@
             <div class="row animate-box">
                 <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
                     <h2>Newsletter</h2>
-                    <p>Just stay tune for our latest Product. Now you can subscribe</p>
+                    <p>Just stay tune for our latest Apartments. Now you can subscribe</p>
                 </div>
             </div>
             <div class="row animate-box">
@@ -377,7 +377,7 @@
         <div class="modal-dialog d-flex justify-content-center">
             <div class="modal-content w-100">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1"> Are You Sure That You Want to Rent This Product?
+                    <h5 class="modal-title" id="exampleModalLabel1"> Are You Sure That You Want to Rent This Apartments?
                     </h5>
                     <button type="button" class="btn-close" data-mdb-dismiss="modal"onclick="hideModal()"
                         aria-label="Close"></button>
@@ -418,6 +418,7 @@
         
     @endphp
     <script>
-        const disabledDates = {!! json_encode($disabledDates) !!};</script>
+        const disabledDates = {!! json_encode($disabledDates) !!};
+    </script>
     <script src="/theme/js/single_product.js"></script>
 @endsection

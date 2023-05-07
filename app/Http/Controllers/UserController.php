@@ -30,10 +30,7 @@ class UserController extends Controller
 {
     public function __construct()
     {
-        if(Auth::check()) {
-            $this->middleware(['verified']);
-        }
-        
+        $this->middleware('verified');
     }
     public function userSession(){
         $userId=Auth::user()->id;
@@ -298,7 +295,8 @@ class UserController extends Controller
      }
      public function new_subscription(Request $request){
         $check =Subscription::where("email",$request->email)->get();
-        if(isset($check[0]->email)){
+        // dd($check);
+        if(!isset($check[0]->email)){
             Subscription::create(["email" => $request->email]);
             print_r(json_encode(["success"=>true]));
         }else{

@@ -23,6 +23,12 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    public function __construct()
+    {
+     
+        $this->middleware('verified');
+        
+    }
     public function index()
     {
         $userId=Auth::user()->id;

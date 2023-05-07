@@ -2,7 +2,8 @@
 @push('custom-style')
     <style>
         body {}
-        .owl-height{
+
+        .owl-height {
             min-height: 245px !important
         }
     </style>
@@ -72,7 +73,11 @@
                 <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
                     <span>Royal resort</span>
                     <h2>About Us</h2>
-                    <p>Find true quality time for you at some of Palm Beach's finest Golf & Spa Resorts. A truly effortless escape boasting sumptuous vistas, exclusive amenities, and luxury at your fingertips. Play on historic golf courses, suit up with premium attire or practice on a driving range. Renew yourself at the spa with unique, one-of-a-kind treatments and lavish products. These unforgettable stays will have you dreaming of coming back, year after year.</p>
+                    <p>Find true quality time for you at some of Palm Beach's finest Golf & Spa Resorts. A truly effortless
+                        escape boasting sumptuous vistas, exclusive amenities, and luxury at your fingertips. Play on
+                        historic golf courses, suit up with premium attire or practice on a driving range. Renew yourself at
+                        the spa with unique, one-of-a-kind treatments and lavish products. These unforgettable stays will
+                        have you dreaming of coming back, year after year.</p>
                 </div>
             </div>
         </div>
@@ -108,7 +113,7 @@
                             <i class="icon-paper-plane"></i>
                         </span>
                         <h3>Personalized Greetings</h3>
-                        <p>Everyone loves personalization, be it when online shopping or when checking in on a hotel. 
+                        <p>Everyone loves personalization, be it when online shopping or when checking in on a hotel.
 
                             Can you imagine the surprise of your guest. </p>
                         <p><a href="/about" class="btn btn-primary btn-outline">Learn More</a></p>
@@ -131,7 +136,8 @@
                             <i class="icon-move"></i>
                         </span>
                         <h3>A Working Space</h3>
-                        <p>A lot of people work as freelancers, and many are working virtually. Working from home and its benefits are trending right now, and some people may need to check on their email.
+                        <p>A lot of people work as freelancers, and many are working virtually. Working from home and its
+                            benefits are trending right now, and some people may need to check on their email.
                         <p><a href="/about" class="btn btn-primary btn-outline">Learn More</a></p>
                     </div>
                 </div>
@@ -158,7 +164,9 @@
                 <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
                     <span>Cool Stuff</span>
                     <h2>Apartments of Hotel.</h2>
-                    <p>Enter a space where luxury caters to your every whim. This Forbes Five-Star Award-winning spa was created to celebrate you. Step into your private garden villa and enjoy a hand-drawn bath while listening to the sound of waves breaking on the shore. </p>
+                    <p>Enter a space where luxury caters to your every whim. This Forbes Five-Star Award-winning spa was
+                        created to celebrate you. Step into your private garden villa and enjoy a hand-drawn bath while
+                        listening to the sound of waves breaking on the shore. </p>
                 </div>
             </div>
             <div class="row">
@@ -201,10 +209,12 @@
 
                                 <span style="display: block" class="desc">@php echo implode(' ', array_slice(explode(' ', $product->product_description), 0, 20));@endphp..</span>
                                 @auth
-                                    <button class="w-100 btn-primary btn mt-40" onclick="addToFaviourte({{ $product->id }},{{Auth::user()->id}})"><i class="icon-heart"></i> Add To
-                                    Favourite</button>
+                                    <button class="w-100 btn-primary btn mt-40"
+                                        onclick="addToFaviourte({{ $product->id }},{{ Auth::user()->id }})"><i
+                                            class="icon-heart"></i> Add To
+                                        Favourite</button>
                                 @endauth
-                               
+
                             </div>
                         </div>
                     </div>
@@ -336,7 +346,7 @@
             <div class="row animate-box">
                 <div class="col-md-12 col-md-offset-2 text-center fh5co-heading">
                     <h2>Newsletter</h2>
-                    <p>Just stay tune for our latest Product. Now you can subscribe</p>
+                    <p>Just stay tune for our latest Apartments. Now you can subscribe</p>
                 </div>
             </div>
             <div class="row animate-box">
@@ -345,6 +355,7 @@
                         <div class="col-md-6 col-sm-6" style="margin: auto">
                             <div class="form-group" style="display: flex">
                                 @csrf
+                                
                                 <input type="email" name="email" required class="form-control" id="email"
                                     placeholder="Email">
 

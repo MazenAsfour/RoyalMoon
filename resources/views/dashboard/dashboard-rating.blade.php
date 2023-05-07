@@ -83,7 +83,7 @@
                                         @else
                                             <td>Approved</td>
                                         @endif
-                                        @if ($rating->description == 1)
+                                        @if ($rating->is_approved == 1)
                                             <td><i class="fa fa-check pointer" {{-- onclick="lanuchModalReplay({{ $rating->id }})" --}} aria-hidden="true"></i>
                                             </td>
                                         @else

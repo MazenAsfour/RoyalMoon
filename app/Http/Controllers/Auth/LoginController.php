@@ -67,7 +67,7 @@ class LoginController extends Controller
         $user = $ga->user();
         
         if(empty($user)) {
-            return redirect('/home')->with("filed","Oop,Login With Google Has Been Failed ,Please Try Again Later!");
+            return redirect('/login')->with("filed","Oop,Login With Google Has Been Failed ,Please Try Again Later!");
             die();
             //Do something.
         }else{
@@ -104,7 +104,7 @@ class LoginController extends Controller
                 $post=User::find($user->id);
                 Notification::send($user, new postNewNotifications($post));
                 Auth::loginUsingId($user->id);
-                header('refresh:0;url='.$_SERVER['PHP_SELF'].'');
+                header('refresh:0;url=/');
                 return redirect('/home')->with('success', 'Login Successfully');
             } catch (\Throwable $th) {
                 echo $th->getMessage();
