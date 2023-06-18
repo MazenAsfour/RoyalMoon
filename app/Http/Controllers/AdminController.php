@@ -304,16 +304,23 @@ class AdminController extends Controller
     public function add_products(Request $request){
         $checkAdmin=$this->checkAccess();
         if($checkAdmin){
+            try {
             $product =Products::create([
                 "product_name"=>$request->pr_name,
                 "product_image_path"=>$request->pr_image_link,
                 "product_price"=>$request->pr_Price,
                 "product_description"=>$request->pr_description,
-                // "catgory"=>$request->catgory,
-                "catgory"=>"0",
+                // "catgory"=>"$request->catgory",
+                "catogry"=>"0",
 
-            ]);
-            return json_encode(["id"=>$product->id]);
+            ]); 
+              return json_encode(["id"=>$product->id]);
+        } catch (\Throwable $th) {
+            DB::rollBack();
+            echo $th->getMessage();
+            return json_encode(["error"=>true ,"error_message"=>"Email is already exist! You Must choose a unique email"]);
+        }
+         
         }
     }
     public function update_products(Request $request){
@@ -328,10 +335,15 @@ class AdminController extends Controller
         }
     }
     public function delete_products(Request $request){
+        // dd($request);
         $checkAdmin=$this->checkAccess();
         if($checkAdmin){
             Products::where("id",$request->id)->delete();
+            print_r(json_encode(["success"=>true]));
+        }else{
+            print_r(json_encode(["success"=>false])); 
         }
+die;
     }
     public function contact(){
         $checkAdmin=$this->checkAccess();

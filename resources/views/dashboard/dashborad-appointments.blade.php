@@ -364,7 +364,7 @@
                     },
 
                     success: (data) => {
-                        $(".alert-success-delete").show();
+                        $("#modal-delete .alert-success").show();
                         setTimeout(() => {
                             location.reload();
                         }, 3000);

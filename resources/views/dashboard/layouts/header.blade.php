@@ -13,6 +13,23 @@ $countUnreadApp = App\Models\Appointments::where("is_read","0")->count();
     color: #fff;
     font-weight: 600;
 }
+.active {
+      background-color: unset !important
+  }
+  .profile_img img{
+    height:178px
+  }
+  .nav-pills .active, .nav-pills .show {
+    background: #d1c286 !important;
+    border-radius: 6px;
+}
+.user_img img{
+    height: 75px
+}
+.icon_info ul li a img {
+    width: 35px;
+    height: 31px;
+}
 </style>
 <div class="dashboard dashboard_1">
     <div class="full_container" style="top: 0;

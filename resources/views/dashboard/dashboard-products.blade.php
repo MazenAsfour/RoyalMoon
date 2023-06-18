@@ -189,7 +189,7 @@
                                         <th>Apartment Name</th>
                                         <th>Apartment Price</th>
                                         <th>Apartment Description</th>
-                                        <th>Apartment Created At</th>
+                                        <th style="width:150px!important">Apartment Created At</th>
                                         <th style="width: 15px;"></th>
                                         <th style="width: 15px;"></th>
 
@@ -538,10 +538,15 @@
                         "_token": $('#token').attr('content'),
                     }
                 }).done(function(data) {
+                    res = JSON.parse(data);
+                    if(res.success){
                     $(".alert-success").show();
                     setTimeout(() => {
                         location.reload();
                     }, 3000);
+
+                    }
+                    
                 });
 
             }

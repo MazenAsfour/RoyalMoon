@@ -55,10 +55,10 @@
                                     <th>#</th>
                                     <th>Name</th>
                                     <th>Email</th>
-                                    <th>Product Name</th>
+                                    <th style="width:140px!important">Product Name</th>
                                     <th>Description</th>
                                     <th>Created At</th>
-                                    <th>Is Approved</th>
+                                    <th style="width:100px!important">Is Approved</th>
                                     <th style="width: 15px;"></th>
                                     <th style="width: 15px;"></th>
 
@@ -77,7 +77,7 @@
                                         <td id="{{ $rating->id }}email">{{ $rating->email }}</td>
                                         <td id="{{ $rating->id }}product">{{ $rating->product_name }}</td>
                                         <td id="{{ $rating->id }}msg">{{ $rating->description }}</td>
-                                        <td>{{ $rating->created_at }}</td>
+                                        <td  style="width:150px!important">{{ $rating->created_at }}</td>
                                         @if ($rating->is_approved == 0)
                                             <td>Pending</td>
                                         @else

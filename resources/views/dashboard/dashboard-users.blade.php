@@ -4,15 +4,15 @@
 @endsection
 @push('custom-style')
     <style>
-        
+
     </style>
 @endpush
 @section('content')
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js" defer="defer"></script>
-<script src="assets/resource/tiny_mce.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js" defer="defer"></script>
+    <script src="assets/resource/tiny_mce.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
     <!-- right content -->
     <div id="content">
 
@@ -90,7 +90,7 @@
                 </div>
             </div>
         </div>
-   
+
 
         <!-- Modal -->
         <div class="modal fade modal-update" id="staticBackdrop1" tabindex="-1" aria-labelledby="exampleModalLabel1"
@@ -132,8 +132,7 @@
                             </div>
                             <input type="hidden" id="idSelected" name="id" value='' name="">
 
-                            <div class="alert alert-success ds-none" style="padding:8px 12px;font-size:14px"
-                                role="alert">
+                            <div class="alert alert-success ds-none" style="padding:8px 12px;font-size:14px" role="alert">
                                 Updated User Profile Seccuessfully
                             </div>
                             <!-- Submit button -->
@@ -211,8 +210,8 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade modal-delete" id="staticBackdrop1" tabindex="-1" aria-labelledby="exampleModalLabel1"
-            aria-hidden="true">
+        <div class="modal fade modal-reset-password" id="staticBackdrop1" tabindex="-1"
+            aria-labelledby="exampleModalLabel1" aria-hidden="true">
             <div class="modal-dialog d-flex justify-content-center">
                 <div class="modal-content w-75">
                     <div class="modal-header">
@@ -253,7 +252,7 @@
             }
 
             function LanuchSendResetPasswordModal(email) {
-                $('.modal-delete').modal("show");
+                $('.modal-reset-password').modal("show");
                 $("#EmailSelected").text(email)
             }
 
@@ -304,7 +303,7 @@
 
             }
             $(document).ready(function() {
-                
+
                 $('#myTable').DataTable();
                 $("#myTable_filter input").addClass("form-control");
                 $("#myTable_length select").addClass("form-control");
@@ -477,6 +476,5 @@
                     }
                 })
             })
-        
         </script>
     @endsection

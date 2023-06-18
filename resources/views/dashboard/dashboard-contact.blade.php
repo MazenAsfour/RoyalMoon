@@ -68,7 +68,7 @@
                                             <td id="{{ $contact->id }}name">{{ $contact->user_name }}</td>
                                             <td id="{{ $contact->id }}email">{{ $contact->user_email }}</td>
                                             <td style="width: 500px;">{{ $contact->message }}</td>
-                                            <td>{{ $contact->created_at }}</td>
+                                            <td style="width:200px">{{ $contact->created_at }}</td>
                                             @if ($contact->replayed)
                                                 <td><i class="fa fa-check green" title="Replayed" aria-hidden="true"></i>
                                                 </td>
